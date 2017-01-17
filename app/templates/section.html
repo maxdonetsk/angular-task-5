@@ -1,11 +1,27 @@
 
 <div class="section">
-	<div class="controlpane">
-		<span class="draft-checkin">checkin</span>
-		<span class="change-save">save</span>
-		<span class="change-discard">discard</span>
-		<span class="decide-accept">accept</span>
-		<span class="decide-decline">decline</span>
-	</div>
-	<div class="content" contenteditable="true" ng-bind-html="redlinedata.html"></div>
+    <div class="content" contenteditable="true" ng-bind-html="redlinedata.html" ng-model="content"></div>
+    <div class="hint">{{content}}</div>
+    <div class="controlpane">
+        <div>
+            <button class="draft-checkin" ng-click="postData('checkin')">checkin</button>
+            <span class="tooltip">checkin</span>
+        </div>
+        <div>
+            <button class="change-save" ng-click="postData('save')">save</button>
+            <span class="tooltip">save</span>
+        </div>
+        <div>
+            <button class="change-discard" ng-click="postData('discard')">discard</button>
+            <span class="tooltip">discard</span>
+        </div>
+        <div>
+            <button class="decide-accept" ng-click="postData('accept')">accept</button>
+            <span class="tooltip">accept</span>
+        </div>
+        <div>
+            <button class="decide-decline" ng-click="postData('decline')">decline</button>
+            <span class="tooltip">decline</span>
+        </div>
+    </div>
 </div>
