@@ -7,14 +7,12 @@
             <file>file:/D:/wamp/www/smashdocs/bower.json</file>
             <file>file:/D:/wamp/www/smashdocs/app/index.html</file>
             <file>file:/D:/wamp/www/smashdocs/app/templates/section.html</file>
-            <file>file:/D:/wamp/www/smashdocs/app/components/redlineDirective.js</file>
-            <file>file:/D:/wamp/www/smashdocs/app/app.js</file>
-            <file>file:/D:/wamp/www/smashdocs/app/components/documents.factory.js</file>
-            <file>file:/D:/wamp/www/smashdocs/app/components/baseUrl.constant.js</file>
-            <file>file:/D:/wamp/www/smashdocs/app/app.css</file>
-            <file>file:/D:/wamp/www/smashdocs/app/components/contenteditable.directive.js</file>
             <file>file:/D:/wamp/www/smashdocs/app/components/section.controller.js</file>
-            <file>file:/D:/wamp/www/smashdocs/app/index-async.html</file>
+            <file>file:/D:/wamp/www/smashdocs/app/app.js</file>
+            <file>file:/D:/wamp/www/smashdocs/app/bower_components/angular-diff/angular-diff.js</file>
+            <file>file:/D:/wamp/www/smashdocs/app/components/contenteditable.directive.js</file>
+            <file>file:/D:/wamp/www/smashdocs/app/components/diff.filter.js</file>
+            <file>file:/D:/wamp/www/smashdocs/app/components/redlineDirective.js</file>
         </group>
     </open-files>
 </project-private>

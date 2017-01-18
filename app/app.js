@@ -4,7 +4,8 @@
 angular.module('myApp', [
     'ngRoute',
     'redlineDirective',
-    'contenteditableDirective'
+    'contenteditableDirective',
+    'diff'
 ]).
         config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
                 $routeProvider.otherwise({redirectTo: '/view1'});

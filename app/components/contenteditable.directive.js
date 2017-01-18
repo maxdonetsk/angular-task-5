@@ -1,5 +1,5 @@
 angular.module('contenteditableDirective', [])
-        .directive('contenteditable', function () {
+        .directive('contenteditable', function ($filter, $sce) {
             return {
                 restrict: 'A', // only activate on element attribute
                 require: '?ngModel', // get a hold of NgModelController
@@ -19,8 +19,11 @@ angular.module('contenteditableDirective', [])
 
                     // Write data to the model
                     function read() {
-                        var html = element.html();
-                        ngModel.$setViewValue(html);
+                        var oldVal = scope.redlinedata.string;
+                        var newVal = element.text();
+                        var result = $filter('diff')(oldVal, newVal);
+                        result = $sce.getTrustedHtml(result);
+                        ngModel.$setViewValue(result);
                     }
                 }
             };

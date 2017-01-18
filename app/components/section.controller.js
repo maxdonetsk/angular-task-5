@@ -1,17 +1,12 @@
 angular.module('myApp')
         .controller('SectionController', ['$scope', '$sce', 'Documents', function ($scope, $sce, Documents) {
                 $scope.redlinedata = {
-                    content: '<del>deleted</del> <insacc>accepted</insacc> <ins>inserted</ins>'
+                    content: '<del>deleted</del> <insacc>accepted</insacc> <ins>inserted</ins>',
+                    string: 'deleted accepted'
                 };
                 $scope.redlinedata.html = $sce.trustAsHtml($scope.redlinedata.content);
-                
-                $scope.content = $scope.redlinedata.content;
 
-                $scope.$watch('content', function (newVal, oldVal) {
-                    if (newVal === '' && oldVal === $scope.redlinedata.content) {
-                        $scope.content = $scope.redlinedata.content;
-                    }
-                });
+                $scope.content = $scope.redlinedata.content;
 
                 $scope.postData = function (action) {
 

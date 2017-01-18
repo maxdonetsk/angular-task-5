@@ -2,8 +2,8 @@
 <div class="section">
     <div class="content"
          contenteditable="true"
-         ng-bind-html="redlinedata.html"
-         ng-model="content"></div>
+         ng-model="content"
+         ng-model-options="{debounce: 100}"></div>
     <div class="hint">{{content}}</div>
     <div class="controlpane">
         <div>
